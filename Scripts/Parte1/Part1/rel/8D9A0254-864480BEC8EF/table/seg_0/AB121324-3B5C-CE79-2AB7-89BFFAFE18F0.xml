@@ -1,0 +1,289 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB121324-3B5C-CE79-2AB7-89BFFAFE18F0" name="Acta">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>783ADF97-3491-EAAF-A0EC-DB4D3949432A</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero_mesa" id="5480B2E8-55CE-787F-1262-33D641C534F2">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>8ED645DC-24AD-C079-94AF-1695B20E0672</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Eleccion_codigo_ele" id="5B1A3D8D-C750-83AE-F9B9-CFC6EA251E42">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>F067FCCB-AE69-7D94-A0D3-8E9D578D9550</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE30229F-0B32-3AE0-3034-9BEF3C05461A" referredColumn="DBCB4975-0923-725D-CDA3-B1A3134BC7EA"/>
+</associations>
+</Column>
+<Column name="Municipio_Departamento_codigo_depto" id="3A3697D1-8196-A32B-B12A-81B0A352E00C">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>84283570-30B2-20D7-8AEF-4E3DEFC23F52</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E9F08735-B22C-12A5-1766-5F29F5B79A58" referredColumn="9B0FDC62-0B74-838F-313D-3F28EABF01FE"/>
+</associations>
+</Column>
+<Column name="Municipio_codigo_muni" id="C3B39855-05EC-FEA8-4F87-84985319B715">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>72E2EC77-0925-62D1-1B48-287DA12CFF69</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E9F08735-B22C-12A5-1766-5F29F5B79A58" referredColumn="EC2D68B5-2C28-657B-3429-4A29CEB51543"/>
+</associations>
+</Column>
+<Column name="papeleras_recibidas" id="F2A37235-D939-482F-D44F-CA52BAEEBB99">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>20407F4D-14CC-010B-CC29-7B2D679B841F</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_votos_validos" id="16FC4332-0240-5BC9-E5AC-219661055554">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>9FAEC2D7-32FD-3373-E2D8-F8A27B004DC6</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="votos_nulos" id="BD93E7DF-6734-6D92-A58E-46FA1AA539B3">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>CA78BB94-CC62-1E66-5426-8316EDD09201</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="votos_blancos" id="16CED3BB-FD3B-8769-D99B-3B0E128A4D77">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>847749F7-F543-E70D-2688-8CD634084120</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="votos_validos_emitidos" id="996A3FFB-FAF7-8A5C-32BE-7F1D4264A6CA">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>C54421B4-D0A6-0DC3-A1B1-2438D14F4389</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="votos_invalidos" id="788CEABE-97B4-516A-4080-7C726BAB515B">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>213AF91C-4923-BBAF-A70E-BFE7D5A7604A</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imagen" id="19933B06-BCE9-E84C-C2FE-4BD5A89EB345">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>AADC940B-25B7-E466-F1C5-DC92ADC1B3B4</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado_imagen" id="8C6A5580-AA88-FEDF-53B0-9D4F851336D8">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>9F8DFD7B-4EE5-EB51-A2E5-539014162658</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuadra_acta" id="31480CDF-73BE-1B04-17B9-13AC6752C2CB">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>1E66A124-C4EA-FD39-97B5-65C487B2CEF0</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="conteo_impugna" id="74BEC51E-820F-8390-91E9-CB12969448EF">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>1FA67770-9000-61B9-D197-3D120E2B2581</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="conteo_inscritos" id="A4D1A833-87F3-DF5F-1D7D-2DCFF4FF04E7">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>5CA09BE9-E4ED-3D78-5742-1D7DDDE75F1F</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stacta" id="CB082BB3-AEC7-6C68-2E63-8F5227CA10FA">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>E6A5940E-8463-E6EB-C6A1-BCE979832FA2</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stescan" id="1BDF3451-EC46-5F2F-F32F-2916E5F27F9B">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>10DCAAEA-83C6-05F1-F435-B6641721F5C4</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stfisc" id="E68037DB-F187-7FF9-A84A-1CB11D8973AF">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>907F3450-975B-A282-398B-DF0142DEF7C2</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sttrans" id="8F893492-E122-10C2-4A0D-AAFA6544A41E">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>0AFB62BB-5DA5-A29C-3C53-B8C31CC85F34</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB2F2229-8498-898B-312E-6A6A79CF2152" name="Acta_PK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>964F44EF-58D5-C1C6-F384-9FD40BCF5F91</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5480B2E8-55CE-787F-1262-33D641C534F2"/>
+<colUsage columnID="C3B39855-05EC-FEA8-4F87-84985319B715"/>
+<colUsage columnID="3A3697D1-8196-A32B-B12A-81B0A352E00C"/>
+<colUsage columnID="5B1A3D8D-C750-83AE-F9B9-CFC6EA251E42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FBB27F1-9F37-6FAE-78F9-2E5E338BA896" name="Acta_Municipio_FK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>AF320F56-9BB4-C1AE-DFB6-3F3D73F51951</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3B39855-05EC-FEA8-4F87-84985319B715"/>
+<colUsage columnID="3A3697D1-8196-A32B-B12A-81B0A352E00C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="302DD778-A170-5996-0416-0806AC75F92F" name="Acta_Eleccion_FK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:44:16 UTC</createdTime>
+<generatorID>B9A9F3E0-6EF7-B745-A4A7-2F59331A5C9D</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B1A3D8D-C750-83AE-F9B9-CFC6EA251E42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

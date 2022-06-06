@@ -1,0 +1,286 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="783ADF97-3491-EAAF-A0EC-DB4D3949432A" name="Acta">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-05 22:01:22 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero_mesa" id="8ED645DC-24AD-C079-94AF-1695B20E0672">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:33:30 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo_ele" id="F067FCCB-AE69-7D94-A0D3-8E9D578D9550">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:34:46 UTC</createdTime>
+<generatorID>B9A9F3E0-6EF7-B745-A4A7-2F59331A5C9D</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<referedAttribute>B6119EA1-2DE4-9AA6-3A57-1B498FA7AB07</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo_depto" id="84283570-30B2-20D7-8AEF-4E3DEFC23F52">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:34:23 UTC</createdTime>
+<generatorID>AF320F56-9BB4-C1AE-DFB6-3F3D73F51951</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<referedAttribute>364BAE4D-1870-A090-2F79-74668E36D2B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo_muni" id="72E2EC77-0925-62D1-1B48-287DA12CFF69">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:34:23 UTC</createdTime>
+<generatorID>AF320F56-9BB4-C1AE-DFB6-3F3D73F51951</generatorID>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<referedAttribute>CCC51D3E-9195-0FE1-5763-737E9DF2A3D4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="papeleras_recibidas" id="20407F4D-14CC-010B-CC29-7B2D679B841F">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:35:25 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_votos_validos" id="9FAEC2D7-32FD-3373-E2D8-F8A27B004DC6">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:35:40 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="votos_nulos" id="CA78BB94-CC62-1E66-5426-8316EDD09201">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:35:53 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="votos_blancos" id="847749F7-F543-E70D-2688-8CD634084120">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:36:10 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="votos_validos_emitidos" id="C54421B4-D0A6-0DC3-A1B1-2438D14F4389">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:36:25 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="votos_invalidos" id="213AF91C-4923-BBAF-A70E-BFE7D5A7604A">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:36:37 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="imagen" id="AADC940B-25B7-E466-F1C5-DC92ADC1B3B4">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:37:03 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado_imagen" id="9F8DFD7B-4EE5-EB51-A2E5-539014162658">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:38:50 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cuadra_acta" id="1E66A124-C4EA-FD39-97B5-65C487B2CEF0">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:39:05 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="conteo_impugna" id="1FA67770-9000-61B9-D197-3D120E2B2581">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:39:35 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="conteo_inscritos" id="5CA09BE9-E4ED-3D78-5742-1D7DDDE75F1F">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:39:51 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stacta" id="E6A5940E-8463-E6EB-C6A1-BCE979832FA2">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:40:03 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stescan" id="10DCAAEA-83C6-05F1-F435-B6641721F5C4">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:40:17 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stfisc" id="907F3450-975B-A282-398B-DF0142DEF7C2">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:40:32 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sttrans" id="0AFB62BB-5DA5-A29C-3C53-B8C31CC85F34">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:40:45 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="964F44EF-58D5-C1C6-F384-9FD40BCF5F91" name="Acta PK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 04:26:23 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8ED645DC-24AD-C079-94AF-1695B20E0672</attributeRef>
+<attributeRef>72E2EC77-0925-62D1-1B48-287DA12CFF69</attributeRef>
+<attributeRef>84283570-30B2-20D7-8AEF-4E3DEFC23F52</attributeRef>
+<attributeRef>F067FCCB-AE69-7D94-A0D3-8E9D578D9550</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

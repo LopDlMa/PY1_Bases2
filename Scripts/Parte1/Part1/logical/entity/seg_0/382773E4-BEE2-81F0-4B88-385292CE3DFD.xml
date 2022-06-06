@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="382773E4-BEE2-81F0-4B88-385292CE3DFD" name="Eleccion">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-05 22:01:54 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo_ele" id="B6119EA1-2DE4-9AA6-3A57-1B498FA7AB07">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 03:54:41 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_ele" id="AF31587E-E7CC-31A0-5D9B-F416FA074FE4">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 03:54:53 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B124B96-4F10-AE52-0A58-FB65471CA238" name="Eleccion PK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 03:54:51 UTC</createdTime>
+<ownerDesignName>Part1</ownerDesignName>
+<engineerTo>
+<item key="8D9A0254-565A-19A4-3793-864480BEC8EF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B6119EA1-2DE4-9AA6-3A57-1B498FA7AB07</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
