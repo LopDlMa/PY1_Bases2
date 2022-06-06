@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5CC28422-529E-A2E0-AE6A-738583B079F6" name="Partido">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>746C0483-32EF-906F-3F6C-589905C1A16F</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="partido" id="1E189567-C38B-6264-3DA5-DD8C021B4D76">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>F88077CB-953B-CD75-616F-D93056D15A26</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="109DDEC0-B86E-B441-5ADE-5422B9ABF2E2">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>1CDD01EB-377D-B9ED-482A-0227FC4672F3</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goles_local" id="E8BBE532-2CE4-F764-797E-B6C707079130">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>73B9046E-121F-EDC8-D43C-D00D796B1325</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goles_Visita" id="36DC7321-29EC-EF1D-5B79-08114195633E">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>73724459-CD0F-2B02-0837-469FFB62DC0C</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Jornada_jornada" id="398A9DC4-7EBE-7A22-1871-BE9F81DB655B">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>3C3A763E-F700-633B-0839-22301C6A7FFF</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A51E83F5-C540-D13F-402D-3DA76F7B0E6C" referredColumn="9EE8621D-DA3D-903A-737A-4EEAF943B319"/>
+</associations>
+</Column>
+<Column name="Jornada_Liga_liga" id="363952B5-0D9E-E868-480D-3F7A13F7E0C3">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>1B714C8C-B50B-3151-6AF1-26810F40CD62</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A51E83F5-C540-D13F-402D-3DA76F7B0E6C" referredColumn="0E3F872B-27D2-B777-658E-301D5116CE40"/>
+</associations>
+</Column>
+<Column name="Equipo_equipo" id="95CD01FB-0036-7A19-C14B-950EA7EE6372">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>52DA6F38-9166-C321-702F-78541C031286</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B35B1A1-B37C-2076-80D6-267448ADFB24" referredColumn="9C39528E-0E6B-EE29-9844-AC0838841B63"/>
+</associations>
+</Column>
+<Column name="Equipo_equipo2" id="701740FB-919E-7863-C90D-D0AF0B506ABB">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>24ADEB03-7E24-5501-D886-4BCBD62845DA</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0F52ACC-4135-1966-81EA-F321854AF87E" referredColumn="9C39528E-0E6B-EE29-9844-AC0838841B63"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD97A0A0-A117-4065-5175-78429A9A8110" name="Partido_PK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>6B268749-79F1-FD26-9771-C0BBD6B0C47D</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E189567-C38B-6264-3DA5-DD8C021B4D76"/>
+<colUsage columnID="398A9DC4-7EBE-7A22-1871-BE9F81DB655B"/>
+<colUsage columnID="363952B5-0D9E-E868-480D-3F7A13F7E0C3"/>
+<colUsage columnID="95CD01FB-0036-7A19-C14B-950EA7EE6372"/>
+<colUsage columnID="701740FB-919E-7863-C90D-D0AF0B506ABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E2E1720-CB8E-3D38-C523-0CE8EC4C0D93" name="Partido_Jornada_FK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>15B663B6-1320-BAD6-D68F-7A3FD8DD1A6F</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="398A9DC4-7EBE-7A22-1871-BE9F81DB655B"/>
+<colUsage columnID="363952B5-0D9E-E868-480D-3F7A13F7E0C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE0BF2B1-EBCC-9BBE-741F-0536C19BDBB0" name="Partido_Equipo_FK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>EBE21C61-8CD2-AD92-2A86-7F0C39C87814</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95CD01FB-0036-7A19-C14B-950EA7EE6372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="908CD05F-E2A6-BCCB-E603-B5361CD8FEB6" name="Partido_Equipo_FKv2">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>CC66C050-2B70-5E10-7F68-CFFF70C9C8CB</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="701740FB-919E-7863-C90D-D0AF0B506ABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

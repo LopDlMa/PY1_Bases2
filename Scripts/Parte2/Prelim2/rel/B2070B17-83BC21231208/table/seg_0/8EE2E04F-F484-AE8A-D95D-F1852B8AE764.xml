@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8EE2E04F-F484-AE8A-D95D-F1852B8AE764" name="Liga">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>6F287DD3-392C-C815-9316-ACA1B36A9BA7</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="liga" id="E61A697C-7492-8C13-8084-36FF73C1432A">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>5A56EC49-5D9F-9967-505C-10DB4A3CEBF8</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E419E440-C74C-C31C-46F4-C1170D4A93BE">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>C7071404-BE3D-5EF1-0A61-2C33AF05BCB1</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="4F19A16E-8676-9B8E-AD79-6E9046EBE937">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>69E808DC-3346-1848-7BB0-4D61B1E2A30F</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_fin" id="DC77A898-5D5A-92D0-CFC9-2B8BCCF6714B">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>89EE8186-AF99-699A-B104-8107A36C1787</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73550DF3-A770-1E70-A128-E98FC2C68AB2" name="Liga_PK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>CDDD0797-8274-7725-62E6-34C882366B3A</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E61A697C-7492-8C13-8084-36FF73C1432A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

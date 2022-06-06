@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48E853F6-49E2-E64E-3FCB-52D8DE79806C" name="Jugador">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>0651306E-455D-10E7-8901-8D85563D379E</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="jugador" id="A461F5E3-9D8C-EDAC-1DD8-63494ECEAE21">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>5658C9D9-DD07-EB6B-AFEE-3B93D560A786</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="35663F2E-4E52-7A69-9D64-ADC6DE9DD7B7">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>13D05EBB-30C5-DC9C-7285-21712415C2A1</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="goles" id="4518533B-8201-7021-2586-AC842A751079">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>B7648B80-0D44-32EE-73D9-A34EA1AC479D</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Equipo_equipo" id="A2A1FAF2-B2D4-E4A8-FBC6-B4A31344A881">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>B321B27B-696C-AF4E-457B-0044B4185F50</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80283E57-559F-BDB4-AF45-E070AD5A327C" referredColumn="9C39528E-0E6B-EE29-9844-AC0838841B63"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22A3E6A1-B1EB-BE31-A417-9A577AC44CA8" name="Jugador_PK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>5631D097-AED9-E76A-3BF7-7A61DF192A66</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A461F5E3-9D8C-EDAC-1DD8-63494ECEAE21"/>
+<colUsage columnID="A2A1FAF2-B2D4-E4A8-FBC6-B4A31344A881"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82D407FA-DDE1-04E7-EA79-915A18EE5F34" name="Jugador_Equipo_FK">
+<createdBy>dm996</createdBy>
+<createdTime>2022-06-06 05:38:25 UTC</createdTime>
+<generatorID>2824C1F6-E4B7-61AB-7430-4C8130BB8632</generatorID>
+<ownerDesignName>Prelim2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2A1FAF2-B2D4-E4A8-FBC6-B4A31344A881"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
