@@ -424,3 +424,13 @@ Son los especificados en los archivos .par
 
 ![b](Images/Parte2/b15.png)
 <br>
+
+Si se verifican los datos se podrá ver que a LIGA3 solamente se le otorgaron 2 tablas vacias de LIGA y a LIGA2 se le otorgaron 2 tablas y sus datos de LIGA:
+
+![b](Images/Parte2/b17.png)
+<br>
+<em> LIGA3</em> <br>
+
+![b](Images/Parte2/l.jpeg)
+<br>
+<em> LIGA2</em> <br>
