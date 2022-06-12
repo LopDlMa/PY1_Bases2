@@ -278,6 +278,17 @@ El cual en este caso es:
 
 Seguir el [siguiente link](Carga/view.sql) para encontrar el script.
 
+### Parametros
+
+La modificación de parametros debe hacerse con extremo cuidado, dado a que un mal cambio puede dejar inutilizable las bases de datos, en este caso se creó una réplica de la máquina virtual que posee la base de datos. 
+
+Para cambiar los parametros se usa el siguiente comando desde SQLPlus:
+
+<code> ALTER SYSTEM SET [parametro]=[valor]</code>
+
+Lamentablemente la modificación a dichos parametros fue fallida, para ver mas [dar click](/Images/Parte1/parametros)
+
+
 -------------
 
 ## Parte 2: Backups
