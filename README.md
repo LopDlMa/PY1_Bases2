@@ -1,5 +1,8 @@
 # PY1_Bases2
 
+Como nota antes de empezar: una vez se empiece a hacer la manipulación de sentencias, es preferible hacer <code> commit </code> al terminar o los datos puede que no perduren
+<br>
+<br>
 ## Instalación Oracle en Instancia GCP con Centos 7 y conexión a SQL Developer
 
 Para el desarrollo de este proyecto, se necesita una base de datos Oracle. La version de dicha base de datos será la 21c y estará en una instancia en la nube de Google (Google Cloud Computing [GCP])-
@@ -97,7 +100,7 @@ una vez levantada la base de datos solo será necesaria la informacion de IP, pu
 
 -----
 
-## Parte 1
+## Parte 1: Usuarios y  Permisos
 
 En la siguiente sección se basa en la creación de usuarios (los cuales en ORACLE pueden verse como esquemas) y sus privilegios.
 
@@ -147,7 +150,13 @@ Finalmente se procede a crear la conección con el usuario creado.
 
 ### Creación de Datos
 
-Dada la [configuración](Carga/Corregido.sql)  se procede a ser ejecutada en "ELECCIONES" para así poder proseguir con la creación de usuarios y sus privilegios siguiendo lo siguiente:
+Dada la [configuración](Carga/Corregido.sql)  se procede a ser ejecutada en "ELECCIONES" 
+
+  ![i](Images/Parte1/c10.jpeg)
+
+  ![i](Images/Parte1/c13.jpeg)
+
+Ahora se puede proseguir con la creación de usuarios y sus privilegios siguiendo lo siguiente:
 
 + Creación de Usuarios
   Se requieren los siguientes usuarios: 
@@ -176,7 +185,11 @@ La manera de crear nuevos usuarios para la tablespace es la siguiente:
 
    ![i](Images/Parte1/c4.jpeg)
    <br>
-   
+
+![i](Images/Parte1/c5.jpeg)
+<br>
+<em>Al hacer select sobre la tabla de usuarios podemos ver los usuarios creados </em>
+
 
 + Privilegios de cada Usuario
   
@@ -184,19 +197,230 @@ La manera de crear nuevos usuarios para la tablespace es la siguiente:
 
   ![i](Images/Parte1/t.png)
 
-  + UPDATE: <code>GRANT UPDATE ANY TABLE TO [usuario]; </code>
-  <br>
 
+  + UPDATE: <code>GRANT UPDATE ANY TABLE TO [usuario]; </code>
+
+![i](Images/Parte1/c20.jpeg)
 
   + INSERT: <code> GRANT INSERT ANY TABLE TO [usuario];</code>
+
+![i](Images/Parte1/c18.jpeg)
+
+
+
   + SELECT: <code> GRANT SELECT ANY TABLE TO [usauario] </code>
+
+  ![i](Images/Parte1/c15.jpeg)
+
+    
+
   + DELETE: <code> GRANT DELETE ANY TABLE TO [usuario]; </code>
+
+![i](Images/Parte1/c20.jpeg)
+
   + CREAR TABLAS: <code> GRANT CREATE USER TO [usuario];</code>
 
-Además que a todos los usuarios se les proporciona el privilegio para crear y loggearse a su propia seción
+ ![i](Images/Parte1/c19.jpeg)
 
-<code> </code>
+
+ Como puede verse en las tablas anteriores, existen 2 maneras para poder otorgar permisos a los usuarios, los cuales son:
+
+ + <code> GRANT [permiso] ON [nombre_tabla] TO [usuario]; </code>
+ + <code> GRANT [permiso] ANY TABLE TO [usuario]; </code>
+
+Posteriormente podemos confirmar que permiso tiene que usuario con la siguiete consulta:
+
+
+<code> SELECT * FROM DBA_SYS_PRIVS WHERE GRANTEE [condicion]</code>
+En este caso se usó de la siguiente manera para solamente mostrar los usuarios que nos interesan:
+
+![i](Images/Parte1/c21.png)
+<br>
+
+![i](Images/Parte1/c22.png)
+
+Además que a todos los usuarios se les proporciona el privilegio para crear y loggearse a su propia seción el cual es el siguiente comando:
+
++ <code> GRANT CREATE SESSION TO [usuario] </code>
 
 Seguir el [siguiente link](Carga/users_permitions.sql) para una versión más completa de todos los comandos usados
 
 ### Creación de Vista y Otorgación a usuario "GUEST1"
+
+La siguiente parte describe la vista que se debe de crear para el usuario 1, primero se crea la vista: 
+
+![i](Images/Parte1/c24.png)
+
+La cual proporciona los siguientes registros:
+
+![i](Images/Parte1/c25.png)
+
+Finalmente es necesario otorgarle permisos al usuario <quote> GUEST1</quote>
+por medio de la siguiente sentencia:
+
+<code>GRANT SELECT ON [esquema].[vista] TO [usuario]</code>
+
+![i](Images/Parte1/c26.png)
+
+Ahora el usuario podrá ver la información de dicha vista de la siguiente manera: 
+
+Primero se debe conectar con su usuario :
+
+![i](Images/Parte1/f2.png)
+
+Y posteriormente ejecutar: 
+<br>
+<code>SELECT * from [Esquema_origen].[vista]</code>
+<br>
+El cual en este caso es:
+<br>
+<code>SELECT * FROM ELECCIONES.VOTOPRESIDENTE</code>
+
+Seguir el [siguiente link](Carga/view.sql) para encontrar el script.
+
+-------------
+
+## Parte 2: Backups
+
+Para la siguiente parte se usó el siguiente E-R
+
+![b](Images/Parte2/b1.png)
+<br>
+<em>Entidad relación de Liga</em>
+
+Para poder crear la base de datos se crea un usuario llamado LIGA con permisos y posteriormente conectarse a el: 
+
+<code>CREATE USER [ususario] IDENTIFIED BY [password]</code>
+<BR>
+
+![b](Images/Parte2/b2.png)
+![b](Images/Parte2/b3.png)
+
+Una vez conectados, se procede a crear la base de datos y llenarla con el [siguiente archivo](Carga/Script%20Backup.sql) 
+
+![b](Images/Parte2/c3.jpeg)
+![b](Images/Parte2/b4.png)
+
+
+### Creacion de backup
+
+En la maquina virtual, ya sea por medio de SSH u otras herramientas como lo es Termius, procedemos a ingresar el siguiente comando:
+
+<code> su - oracle </code> <br>
+para poder acceder a la consola de oracle y sus herramientas
+
++ Acceder con la contraseña definida
+
+En caso que no permita acceder a herramientas como sqlplus se debe ingresar:
+<code>source oraenv </code> Y como SID EX para setear las variables de entorno, cabe de mencionar que esto se deberá hacer cada vez que se finalize sesion, pero lo modificado permanecerá
+
+
+![b](Images/Parte2/b5.png)
+
+Aquí nos podemos dar cuenta que Oracle está en opt/oracle por lo que procederemos a desloguearnos con 2 exit y así proceder a liberar los permisos en dichas carpetas:
+
+<code>chmod 777 [directorio] </code>
+<br>
+
+![b](Images/Parte2/b6.png)
+<br>
+<em> El color de las carpetas afectadas es ahora verde </em>
+<br>
+
+Ahora volvemos a ingresar a oracle con <code> su - oracle </code> y procedemos a acceder a opt/oracle
+
+<code> cd /opt/oracle/ </code>
+<br>
+Y procedemos a crear una nueva carpeta (en este caso llamada export1) con el comando <code>mkdir</code>
+
+![b](Images/Parte2/b7.png)
+
+Le liberamos los permisos de escritura, lectura y modificación:
+
+<code>chmod 777 [directorio] </code>
+
+y creamos un archivo (en este caso llamado export.par) .par dentro del directorio con el comando <code>touch </code>
+
+![b](Images/Parte2/b8.png)
+
+Ahora con <code>nano</code> procedemos a agregarle lo siguiente:
+
+<code> 
+USERID=[nombre_schema]
+<br>
+DIRECTORY=[directorio]
+<br>
+DUMPFILE=[nombre].dmp
+<br>
+LOGFILE=[nombre].log
+TABLES=[nombre]...,[nombre]
+<br>
+CONTENT=[all|metadata_only|data_only]
+</code>
+<br>
+<br>
+Para Content: <br>
+
++ all: Copia el esquema y sus datos
++ metadata_only: Copia exclusivamente el esquema
++ data_only: copia exclusivamente los datos 
+
+
+![b](Images/Parte2/b9.png)
+<br>
+<em> Archivo export.par en el directorio /opt/oracle/export1 configurado para solo hacer backup de el esquema </em> <br>
+
+
+![b](Images/Parte2/b13.png)
+<br>
+<em> Archivo export.par en el directorio /opt/oracle/export2 configurado para hacer backup de tablas con sus datos </em> <br>
+
+Una vez hecho esto, hay que ir ya sea a SQLPlus o a el IDE que se esté usando u realizar lo siguiente: 
+
+<code> CREATE OR REPLACE DIRECTORY [DIRECTORY] AS 'directorio_destino'; <br>Commit;</code>
+
++ donde DIRECTORY es el directorio especificado en el archivo .par 
++ donde directorio_destino es la carpeta previamente creada en /opt/oracle/
+  
+![b](Images/Parte2/b10.png)
+
+una vez realizado esto, dentro de la máquina se debe ejecutar:
+<br>
+<code>expdp -parfile archivo.par </code>
+
+lo que ejecutará el archivo par y dependiendo de la especificación de CONTENT, hará el backup.
+
+
+![b](Images/Parte2/b11.png)
+<br>
+<em> backup export.par configurado para solo hacer backup de el esquema </em> <br>
+![b](Images/Parte2/b12.png)
+<br>
+<em> backup export.par configurado para solo hacer backup dde las tablas con sus datos</em> <br>
+
+![b](Images/Parte2/b16.png)
+<br>
+<em> archivos que deben aparecer en el directorio .././export[1|2] </em> <br>
+<br>
+Una vez completados ya podremos hacer uso de los backups creados, para efecto de este manual, el esquema <b>LIGA2</b> tendrá el backup de las tablas con sus datos y <b>LIGA3</b> solamente tendrá el backup del esquema pedido.
+<br>
+Estando en la carpeta donde se encuentran los backups:
+<br>
+El comando para reestablecer la información del backup es el siguiente:
+<br>
+<code>impdp usuario/password directory=DIRECTORIO dumpfile=DUMPFILE.dump logfile=nombre.log remap_schema=usuario_origen:usuario</code>
+<br>
+Donde:
+
++ DIRECTORIO
++ DUMPFILE
+Son los especificados en los archivos .par
+<br>
+
+![b](Images/Parte2/b14.png)
+<br>
+<em> impdp de esquemas a DB LIGA2 </em> <br>
+
+
+![b](Images/Parte2/b15.png)
+<br>
