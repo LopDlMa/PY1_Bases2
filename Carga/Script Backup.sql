@@ -1,4 +1,3 @@
---DDL
 CREATE TABLE Liga(
     liga integer PRIMARY KEY,
     nombre CHAR(250 CHAR) NOT NULL,
@@ -35,9 +34,9 @@ CREATE TABLE Partido(
     Equipo_equipo integer NOT NULL,
     Equipo_equipo1 integer NOT NULL
 );
+ALTER session set NLS_DATE_FORMAT='DD-MM-YYYY';
 
---DML
-INSERT INTO Liga VALUES (1,'Liga BBVA','01-07-2019','31-05-2019');
+INSERT INTO LIGA VALUES (1,'Liga BBVA','01-07-2019','31-05-2019');
 
 INSERT INTO Equipo VALUES (1,'Villarreal');
 INSERT INTO Equipo VALUES (2,'Valencia');
@@ -49,7 +48,7 @@ INSERT INTO Jugador VALUES (1,'Karim Benzema',14,3);
 INSERT INTO Jugador VALUES (2,'Sergio Ramos',5,3);
 INSERT INTO Jugador VALUES (3,'Toni Kroos',3,3);
 INSERT INTO Jugador VALUES (4,'Luka Modric',3,3);
-INSERT INTO Jugador VALUES (5,'Casemiro',3,3,1);
+INSERT INTO Jugador VALUES (5,'Casemiro',3,3);
 INSERT INTO Jugador VALUES (6,'Vinícius Júnior',2,3);
 INSERT INTO Jugador VALUES (7,'Gareth Bale',2,3);
 INSERT INTO Jugador VALUES (8,'Federico Valverde',2,3);

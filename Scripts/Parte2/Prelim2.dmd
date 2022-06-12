@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Prelim2" id="F589EF56-D599-A7A0-6410-628D5F431EE3" version="3.5">
-<createdBy>dm996</createdBy>
-<createdTime>2022-06-06 05:17:55 UTC</createdTime>
-<ownerDesignName>Prelim2</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>F589EF56-D599-A7A0-6410-628D5F431EE3</designId>
-</OSDM_Design>
